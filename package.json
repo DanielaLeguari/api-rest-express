@@ -4,6 +4,7 @@
   "description": "- Node.js,\r - Express,\r - MongoDB;",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/DanielaLeguari/api-rest-express/issues"
   },
-  "homepage": "https://github.com/DanielaLeguari/api-rest-express#readme"
+  "homepage": "https://github.com/DanielaLeguari/api-rest-express#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
