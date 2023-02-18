@@ -8,6 +8,16 @@
 2. Express,
 3. MongoDB(MongoDB Atlas, serviço do Mongo em nuvem);
 
+
+## MongoDB
+
+- Banco orientado a documentos e coleções, isso significa que seus dados são armazenados dentro de documentos semelhantes a JSON, na prática usamos uma versão binária chamado BSON(Binary Json).;
+
+### Tipo de dados BSON
+
+- <a href='https://www.mongodb.com/docs/manual/reference/bson-types/'>Documentação</a>
+
+
 ### Bibliotecas
 
 1. nodemon
