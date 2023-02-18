@@ -8,27 +8,27 @@
 
 ## Biblioteca Nodemon
 
-`npm install nodemon@2.0.15 -D`
+- `npm install nodemon@2.0.15 -D`
 
 ## Framework
 
 - Express
 
-`npm install express`
+- `npm install express`
 
 <hr>
 
 ## Detalhe importante!
 - quando trabalhamos com o import, o export default lá no package JSON temos que incluir uma linha chamada type e module, para dizer que estamos trabalhando com importação e exportação module.
 
-`  "type": "module",`
+- `  "type": "module",`
 
 <hr>
 
 ### Comandos
 
-`npm init -y`
-`npm run dev` -> para rodar a aplicação
+- `npm init -y`
+- `npm run dev` -> para rodar a aplicação
 
 <hr>
 
@@ -55,7 +55,7 @@
 >**Note**:
 - Utilizando módulo nativo HTTP
     
-    //servidor
+    - //servidor
     const http = require("http");
     const port = 3000;
 
@@ -70,7 +70,7 @@
         res.end(rotas[req.url]);
     });
 
-    //definir a porta
+    - //definir a porta
     server.listen(port, () => {
         console.log(`Servidor escutando em http://localhost:${port}`);
     });
