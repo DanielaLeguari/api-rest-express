@@ -4,13 +4,17 @@
 
 ### Tecnologias
 
-- Node.js,
-- Express,
-- MongoDB;
+1. Node.js,
+2. Express,
+3. MongoDB(MongoDB Atlas, serviço do Mongo em nuvem);
 
-### Biblioteca Nodemon
+### Bibliotecas
 
+1. nodemon
 - `npm install nodemon@2.0.15 -D`
+
+2. moongose
+- `npm install mongoose@6.2.6`
 
 ### Framework
 
@@ -21,7 +25,9 @@
 <hr>
 
 ### Detalhe importante!
-- quando trabalhamos com o import, o export default lá no package JSON temos que incluir uma linha chamada type e module, para dizer que estamos trabalhando com importação e exportação module.
+
+> **Warning**
+-  quando trabalhamos com o import, o export default lá no package JSON temos que incluir uma linha chamada type e module, para dizer que estamos trabalhando com importação e exportação module.
 
 - `  "type": "module",`
 

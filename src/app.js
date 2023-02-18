@@ -1,4 +1,10 @@
 import express from "express";
+import db from "./config/dbConnect.js";
+
+db.on("erro", console.log.bind(console, "Erro de conexão"));
+db.once("open", () => {
+    console.log("conexão com o banco realizada com sucesso.");
+})
 
 const app = express();
 
@@ -40,11 +46,11 @@ app.put("/livros/:id", (req, res) => {
 });
 
 app.delete('/livros/:id', (req, res) => {
-    let {id} = req.params;
+    let { id } = req.params; //{id} atribuição via desestruturação
     let index = buscaLivro(id);
     livros.splice(index, 1);
     res.send(`Livro ${id} removido com sucesso`);
-  });
+});
 
 const buscaLivro = (id) => {
     return livros.findIndex(livro => livro.id == id);
