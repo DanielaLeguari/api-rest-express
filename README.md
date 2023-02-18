@@ -54,7 +54,7 @@
 
 >**Note**:
 - Utilizando módulo nativo HTTP
-    `
+    
     //servidor
     const http = require("http");
     const port = 3000;
@@ -74,5 +74,5 @@
     server.listen(port, () => {
         console.log(`Servidor escutando em http://localhost:${port}`);
     });
-    `
+    
 
