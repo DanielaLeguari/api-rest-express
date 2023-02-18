@@ -51,6 +51,10 @@
 - possui as rotas.
 
 
+### pasta models
+
+- contém o arquivo Livro.js que é a representação de um livro, este arquivo contém as regras de negócio.
+
 
 
 
