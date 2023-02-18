@@ -1,16 +1,18 @@
 #  Treinamento de API(Application Programming Interface) com Express e MongoDB
 
-## Tecnologias
+## Construção de API para Livraria
+
+### Tecnologias
 
 - Node.js,
 - Express,
 - MongoDB;
 
-## Biblioteca Nodemon
+### Biblioteca Nodemon
 
 - `npm install nodemon@2.0.15 -D`
 
-## Framework
+### Framework
 
 - Express
 
@@ -18,7 +20,7 @@
 
 <hr>
 
-## Detalhe importante!
+### Detalhe importante!
 - quando trabalhamos com o import, o export default lá no package JSON temos que incluir uma linha chamada type e module, para dizer que estamos trabalhando com importação e exportação module.
 
 - `  "type": "module",`
@@ -27,7 +29,7 @@
 
 ### Comandos
 
-- `npm init -y`
+- `npm init -y`-> para iniciar o projeto
 - `npm run dev` -> para rodar a aplicação
 
 <hr>
