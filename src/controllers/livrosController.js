@@ -36,9 +36,20 @@ class LivroController {
             if (!err) {
                 res.status(200).send({ message: "Livro atualizado com sucesso!" });
             } else {
-                res.status(500).send({ message: `${err.message}` });
+                res.status(500).send({ message: `${err.message} - Erro ao atualizar livro.` });
             }
         });
+    }
+
+    static excluirLivro = (req, res) => {
+        const id = req.params.id;
+        livros.findByIdAndDelete(id, (err) => {
+            if (!err) {
+                res.status(200).send({ message: "Livro removido com sucesso." });
+            } else {
+                res.status(500).send({ message: `${err.message} -Id do livro não localizado.` });
+            }
+        })
     }
 
 
