@@ -58,6 +58,20 @@ class LivroController {
         })
     }
 
+    static listarLivroPorNomeEditora = (req, res) => {
+        const editora = req.query.editora;
+        livros.find({ 'nome': { $regex : new RegExp(editora, "i") } })
+            .populate('autor', 'nome')
+            .populate('editora', 'nome')
+            .exec((err, livros) => {
+                if (!err) {
+                    res.status(200).json(livros);
+                } else {
+                    res.status(400).send({ message: `${err.message} - O item não foi localizado.` });
+                }
+            })
+    }
+
 
 }
 
