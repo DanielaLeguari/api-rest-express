@@ -57,8 +57,7 @@
 - tem uma função específica que é iniciar o servidor e ficar escutando requisição pela porta indicada.
 
 ### Arquivo app.js
-
-- 
+- Realiza a conexão ao banco.
 
 ### pasta models
 
