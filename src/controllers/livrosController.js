@@ -5,6 +5,7 @@ class LivroController {
     static listarLivros = (req, res) => {
         livros.find()
             .populate("autor")
+            .populate("editora")
             .exec((err, livros) => {
                 res.status(200).json(livros)
             })
@@ -14,6 +15,7 @@ class LivroController {
         const id = req.params.id;
         livros.findById(id)
             .populate("autor", "nome")
+            .populate("editora", "nome")
             .exec((err, livros) => {
                 if (err) {
                     res.status(400).send({ message: `${err.message} - Id do livro não localizado.` });
