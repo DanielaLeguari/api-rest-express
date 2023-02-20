@@ -54,23 +54,24 @@
 
 ### Arquivo server.js
 
-- tem uma função especifica que é iniciar o servidor e ficar escutando requisição.
+- tem uma função específica que é iniciar o servidor e ficar escutando requisição pela porta indicada.
 
 ### Arquivo app.js
 
-- possui as rotas.
-
+- 
 
 ### pasta models
 
 - contém o arquivo Livro.js que é a representação de um livro, este arquivo contém as regras de negócio.
 
+### pasta controllers
 
+-O arquivo livrosController.js possui os métodos organizados no conceito de classe. O smétodos estão no tipo estático para que não seja necessário instanciar essa classe.
+- Esse controlador lá no arquivo de routes irá definir em que método ele tem que chegar dada a rota que for pedida no end point.
 
-
-
-
-
+### pasta routes
+- O arquivo routes faz a conexão/referência com o método(get, put, delete, post).
+- Nesta pasta também se encontra o arquivo index.js que possui todas as rotas.
 
 <hr>
 

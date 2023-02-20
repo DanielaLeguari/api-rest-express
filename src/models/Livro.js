@@ -10,6 +10,6 @@ const livroSchema = new mongoose.Schema(
     }
 );
 
-const livros= mongoose.model('livros', livroSchema); //define o nome do banco que será criado
+let livros= mongoose.model('livros', livroSchema); //define o nome do banco que será criado
 
 export default livros;
