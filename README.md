@@ -1,6 +1,6 @@
 #  Treinamento de API(Application Programming Interface) com Express e MongoDB
 
-## Construção de API para Livraria
+## Construção de API Rest para uma Livraria
 
 ### Tecnologias
 
